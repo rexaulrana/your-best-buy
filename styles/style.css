@@ -1,3 +1,49 @@
 .work-sans {
   font-family: "Work Sans", sans-serif;
 }
+
+/* 
+ <section>
+        <p class="pl-20 pr-20 text-center md:text-left lg:text-left">
+          Kitchenware
+        </p>
+        <div class="flex flex-col md:flex-row lg:flex-row pl-20 pr-20">
+          <div class=" grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- first card -->
+            <div class="card w-60 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/prod1.png" alt="" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2>start</h2>
+                <p class="card-title">K. Accessories</p>
+                <p><span>40.00</span> TK</p>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class="card w-60 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/prod1.png" alt="" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2>start</h2>
+                <p class="card-title">K. Accessories</p>
+                <p><span>40.00</span> TK</p>
+              </div>
+            </div>
+            <!-- third card -->
+            <div class="card w-60 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/prod1.png" alt="" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2>start</h2>
+                <p class="card-title">K. Accessories</p>
+                <p><span>40.00</span> TK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+*/

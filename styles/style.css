@@ -2,6 +2,44 @@
   font-family: "Work Sans", sans-serif;
 }
 
+/* <div class="block mt-3 md:hidden lg:hidden">
+            <h2>Have coupon?</h2>
+            <input
+              type="text"
+              placeholder="Coupon Code"
+              class="py-2 px-2 mb-2"
+            />
+            <button
+              class="btn bg-pink-400 hover:bg-pink-700 text-white"
+              disabled
+            >
+              Apply
+            </button>
+            <div>Item list</div>
+            <p>Total Price:<span>00</span>TK</p>
+            <p>Discount:<span>00</span>TK</p>
+            <p>Grand Total:<span>00</span>TK</p>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="btn bg-pink-400 hover:bg-pink-700 w-9/12 text-white"
+              onclick="my_modal_2.showModal() "
+              disabled
+            >
+              Make Purchase
+            </button>
+            <dialog id="my_modal_2" class="modal w-full h-full">
+              <form method="dialog" class="modal-box text-center">
+                <div class="flex items-center justify-center">
+                  <img src="./images/congo.png" alt="" />
+                </div>
+                <h3 class="font-bold text-5xl">Congratulations</h3>
+                <p class="py-4">You Purchase the product</p>
+                <button class="btn btn-success">Go to Home</button>
+              </form>
+            </dialog>
+          </div> */
+
 /* 
  <section>
         <p class="pl-20 pr-20 text-center md:text-left lg:text-left">

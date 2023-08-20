@@ -78,7 +78,7 @@
                   <i class="fa-solid fa-star"></i>
                 </h2>
                 <p class="card-title">K. Accessories</p>
-                <p><span>80.00</span> TK</p>
+                <p><span>80</span> TK</p>
               </div>
             </div>
             <!-- second card -->
@@ -95,7 +95,7 @@
                   <i class="fa-solid fa-star"></i>
                 </h2>
                 <p class="card-title">K. Accessories</p>
-                <p><span>20.00</span> TK</p>
+                <p><span>20</span> TK</p>
               </div>
             </div>
             <!-- third card -->
@@ -112,7 +112,7 @@
                   <i class="fa-regular fa-star"></i>
                 </h2>
                 <p class="card-title">Home Cooker</p>
-                <p><span>440.00</span> TK</p>
+                <p><span>440</span> TK</p>
               </div>
             </div>
           </div>
@@ -123,14 +123,31 @@
               placeholder="Coupon Code"
               class="py-2 px-2 mb-2"
             />
-            <button class="btn bg-pink-700 text-white" disabled>Apply</button>
+            <button class="btn bg-pink-400 hover:bg-pink-700 text-white">
+              Apply
+            </button>
             <div>Item list</div>
             <p>Total Price:<span>00</span>TK</p>
             <p>Discount:<span>00</span>TK</p>
             <p>Grand Total:<span>00</span>TK</p>
-            <button class="btn bg-pink-700 w-9/12 text-white" disabled>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="btn bg-pink-400 hover:bg-pink-700 w-9/12 text-white"
+              onclick="my_modal_1.showModal()"
+            >
               Make Purchase
             </button>
+            <dialog id="my_modal_1" class="modal w-full h-full">
+              <form method="dialog" class="modal-box text-center">
+                <div class="flex items-center justify-center">
+                  <img src="./images/congo.png" alt="" />
+                </div>
+                <h3 class="font-bold text-5xl">Congratulations</h3>
+                <p class="py-4">You Purchase the product</p>
+                <button class="btn btn-success">Go to Home</button>
+              </form>
+            </dialog>
           </div>
         </div>
       </section>
@@ -158,7 +175,7 @@
                   <i class="fa-regular fa-star"></i>
                 </h2>
                 <p class="card-title">Sports Black Cap</p>
-                <p><span>60.00</span> TK</p>
+                <p><span>60</span> TK</p>
               </div>
             </div>
             <!-- second card -->
@@ -175,7 +192,7 @@
                   <i class="fa-regular fa-star"></i>
                 </h2>
                 <p class="card-title">Full Jersey set</p>
-                <p><span>140.00</span> TK</p>
+                <p><span>140</span> TK</p>
               </div>
             </div>
             <!-- third card -->
@@ -192,7 +209,7 @@
                   <i class="fa-regular fa-star"></i>
                 </h2>
                 <p class="card-title">Sports cates</p>
-                <p><span>900.00</span> TK</p>
+                <p><span>900</span> TK</p>
               </div>
             </div>
           </div>
@@ -203,19 +220,34 @@
               placeholder="Coupon Code"
               class="py-2 px-2 mb-2"
             />
-            <button class="btn bg-pink-700 text-white" disabled>Apply</button>
+            <button class="btn bg-pink-400 hover:bg-pink-700 text-white">
+              Apply
+            </button>
             <div>Item list</div>
             <p>Total Price:<span>00</span>TK</p>
             <p>Discount:<span>00</span>TK</p>
             <p>Grand Total:<span>00</span>TK</p>
-            <button class="btn bg-pink-700 w-9/12 text-white" disabled>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="btn bg-pink-400 hover:bg-pink-700 w-9/12 text-white"
+              onclick="my_modal_2.showModal()"
+            >
               Make Purchase
             </button>
+            <dialog id="my_modal_2" class="modal w-full h-full">
+              <form method="dialog" class="modal-box text-center">
+                <div class="flex items-center justify-center">
+                  <img src="./images/congo.png" alt="" />
+                </div>
+                <h3 class="font-bold text-5xl">Congratulations</h3>
+                <p class="py-4">You Purchase the product</p>
+                <button class="btn btn-success">Go to Home</button>
+              </form>
+            </dialog>
           </div>
         </div>
       </section>
     </main>
-
-    <footer></footer>
   </body>
 </html>

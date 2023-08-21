@@ -63,7 +63,10 @@
             <div>
               <h2 class="text-xl font-normal md:text-center">KitchenWear</h2>
               <!-- first card -->
-              <div class="card w-60 bg-base-100 shadow-xl">
+              <div
+                onclick="itemInfo(this)"
+                class="card w-60 bg-base-100 shadow-xl"
+              >
                 <figure class="px-10 pt-10">
                   <img src="./images/prod1.png" alt="" class="rounded-xl" />
                 </figure>
@@ -82,8 +85,11 @@
             </div>
             <div>
               <h2 class="text-xl font-normal invisible">KitchenWear</h2>
-              <!-- first card -->
-              <div class="card w-60 bg-base-100 shadow-xl">
+              <!-- second card -->
+              <div
+                onclick="itemInfo(this)"
+                class="card w-60 bg-base-100 shadow-xl"
+              >
                 <figure class="px-10 pt-10">
                   <img src="./images/prod2.png" alt="" class="rounded-xl" />
                 </figure>
@@ -95,15 +101,18 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                   </h2>
-                  <p class="card-title">K. Accessories</p>
+                  <p class="card-title">Kitchen Accessories</p>
                   <p><span>29</span> TK</p>
                 </div>
               </div>
             </div>
             <div>
               <h2 class="invisible">KitchenWear</h2>
-              <!-- first card -->
-              <div class="card w-60 bg-base-100 shadow-xl">
+              <!-- third card -->
+              <div
+                onclick="itemInfo(this)"
+                class="card w-60 bg-base-100 shadow-xl"
+              >
                 <figure class="px-10 pt-10">
                   <img src="./images/prod3.png" alt="" class="rounded-xl" />
                 </figure>
@@ -122,8 +131,11 @@
             </div>
             <div>
               <h2 class="text-xl font-normal">Sportswear</h2>
-              <!-- first card -->
-              <div class="card w-60 bg-base-100 shadow-xl">
+              <!-- forth card -->
+              <div
+                onclick="itemInfo(this)"
+                class="card w-60 bg-base-100 shadow-xl"
+              >
                 <figure class="px-10 pt-10">
                   <img src="./images/prod4.png" alt="" class="rounded-xl" />
                 </figure>
@@ -142,8 +154,11 @@
             </div>
             <div>
               <h2 class="invisible">KitchenWear</h2>
-              <!-- first card -->
-              <div class="card w-60 bg-base-100 shadow-xl">
+              <!-- fifth card -->
+              <div
+                onclick="itemInfo(this)"
+                class="card w-60 bg-base-100 shadow-xl"
+              >
                 <figure class="px-10 pt-10">
                   <img src="./images/prod5.png" alt="" class="rounded-xl" />
                 </figure>
@@ -162,8 +177,11 @@
             </div>
             <div>
               <h2 class="invisible">KitchenWear</h2>
-              <!-- first card -->
-              <div class="card w-60 bg-base-100 shadow-xl">
+              <!-- sixth card -->
+              <div
+                onclick="itemInfo(this)"
+                class="card w-60 bg-base-100 shadow-xl"
+              >
                 <figure class="px-10 pt-10">
                   <img src="./images/prod6.png" alt="" class="rounded-xl" />
                 </figure>
@@ -185,11 +203,16 @@
             <div class="bg-slate-200 rounded-lg p-2 mb-1">
               <h2>Have coupon?</h2>
               <input
+                id="coupon-field"
                 type="text"
                 placeholder="Coupon Code"
                 class="py-2 px-2 mb-2"
               />
-              <button class="btn bg-pink-400 hover:bg-pink-700 text-white">
+              <button
+                id="apply-btn"
+                class="btn bg-pink-400 hover:bg-pink-700 text-white"
+                disabled
+              >
                 Apply
               </button>
             </div>
@@ -197,15 +220,17 @@
               <h1>Selected items:</h1>
             </div>
             <div class="bg-slate-200 rounded-lg p-2 mb-1">
-              <p>Total Price:<span>00</span>TK</p>
-              <p>Discount:<span>00</span>TK</p>
-              <p>Grand Total:<span>00</span>TK</p>
+              <p>Total Price:<span id="total-price">00</span>TK</p>
+              <p>Discount:<span id="discount-amount">00</span>TK</p>
+              <p>Grand Total:<span id="grand-total">00</span>TK</p>
             </div>
 
             <!-- Open the modal using ID.showModal() method -->
             <button
+              id="make-purchase-btn"
               class="btn bg-pink-400 hover:bg-pink-700 w-full text-white"
               onclick="my_modal_1.showModal()"
+              disabled
             >
               Make Purchase
             </button>

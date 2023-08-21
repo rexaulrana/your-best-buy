@@ -44,32 +44,28 @@ function itemInfo(data) {
       const discountFieldString = (document.getElementById(
         "discount-amount"
       ).innerText = parseFloat(percentage).toFixed(2));
-      //   const discountField = parseFloat(discountFieldString);
-      //   discountField.innerText = parseFloat(percentage);
 
       const previousGroundTotalString =
         document.getElementById("grand-total").innerText;
       const groundTotalFloat = parseFloat(previousGroundTotalString);
       const groundTotal = total - discountFieldString;
-      console.log(groundTotal);
       document.getElementById("grand-total").innerText = groundTotal.toFixed(2);
 
-      //   Purchase
+      //make purchase
+      document.getElementById("go-back").addEventListener("click", function () {
+        document.getElementById("grand-total").innerText = "";
+        document.getElementById("coupon-field").value = "";
+        p.innerText = "";
+        document.getElementById("total-price").innerText = "";
+        document.getElementById("discount-amount").innerText = "";
+      });
     } else {
-      alert("invalid coupon code");
+      alert("Invalid Coupon");
+      document.getElementById("coupon-field").value = "";
+      p.innerText = "";
+      document.getElementById("total-price").innerText = "";
+      document.getElementById("discount-amount").innerText = "";
+      document.getElementById("grand-total").innerText = "";
     }
-    // const discountValue = discountField.innerText;
-    // const discountAmount = parseFloat(discountValue);
-    // discountField.innerText = percentage;
-    // console.log(discountAmount);
-    couponCode.value = "";
   });
 }
-// get coupon code  from coupon field
-
-// function applyCoupon() {
-//   //   const applyBtn = document.getElementById("apply-btn");
-
-//   const couponCode = document.getElementById("coupon-field").value;
-
-// }

@@ -33,8 +33,11 @@ function itemInfo(data) {
 
   document.getElementById("total-price").innerText = total.toFixed(2);
 
+  //make purchase
+  document.getElementById("go-back").addEventListener("click", function () {
+    location.reload();
+  });
   // get coupon code  from coupon field
-
   document.getElementById("apply-btn").addEventListener("click", function () {
     const couponCode = document.getElementById("coupon-field").value;
     if (couponCode === "SELL200") {
@@ -49,23 +52,9 @@ function itemInfo(data) {
       const groundTotalFloat = parseFloat(previousGroundTotalString);
       const groundTotal = total - discountFieldString;
       document.getElementById("grand-total").innerText = groundTotal.toFixed(2);
-
-      //make purchase
-      document.getElementById("go-back").addEventListener("click", function () {
-        document.getElementById("coupon-field").value = "";
-        document.getElementById("selected-items").innerHTML = "";
-        document.getElementById("total-price").innerText = "";
-        document.getElementById("discount-amount").innerText = "";
-        document.getElementById("grand-total").innerText = "";
-      });
     } else {
       alert("Invalid Coupon");
-
-      document.getElementById("coupon-field").value = "";
-      document.getElementById("selected-items").innerHTML = "";
-      document.getElementById("total-price").innerText = "";
-      document.getElementById("discount-amount").innerText = "";
-      document.getElementById("grand-total").innerText = "";
+      location.reload();
     }
   });
 }

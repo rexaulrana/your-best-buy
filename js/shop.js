@@ -39,7 +39,7 @@ function itemInfo(data) {
   document.getElementById("apply-btn").addEventListener("click", function () {
     const couponCode = document.getElementById("coupon-field").value;
     if (couponCode === "SELL200") {
-      const percentage = (total / 200) * 100;
+      const percentage = (20 / 100) * total;
 
       const discountFieldString = (document.getElementById(
         "discount-amount"

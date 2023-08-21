@@ -1,5 +1,4 @@
 let total = 0;
-let discount = 0;
 
 function itemInfo(data) {
   //set item
@@ -53,16 +52,17 @@ function itemInfo(data) {
 
       //make purchase
       document.getElementById("go-back").addEventListener("click", function () {
-        document.getElementById("grand-total").innerText = "";
         document.getElementById("coupon-field").value = "";
-        p.innerText = "";
+        document.getElementById("selected-items").innerHTML = "";
         document.getElementById("total-price").innerText = "";
         document.getElementById("discount-amount").innerText = "";
+        document.getElementById("grand-total").innerText = "";
       });
     } else {
       alert("Invalid Coupon");
+
       document.getElementById("coupon-field").value = "";
-      p.innerText = "";
+      document.getElementById("selected-items").innerHTML = "";
       document.getElementById("total-price").innerText = "";
       document.getElementById("discount-amount").innerText = "";
       document.getElementById("grand-total").innerText = "";
